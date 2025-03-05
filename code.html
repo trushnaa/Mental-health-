@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Advisor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mental Health Advisor</h1>
+        <form id="mentalHealthForm">
+            <label for="mood">How are you feeling today?</label>
+            <select id="mood" name="mood">
+                <option value="happy">Happy</option>
+                <option value="sad">Sad</option>
+                <option value="anxious">Anxious</option>
+                <option value="stressed">Stressed</option>
+            </select>
+
+            <label for="sleep">How many hours of sleep do you get per night?</label>
+            <input type="number" id="sleep" name="sleep" min="0" max="12">
+
+            <label for="financial">How would you describe your financial situation?</label>
+            <select id="financial" name="financial">
+                <option value="stable">Stable</option>
+                <option value="struggling">Struggling</option>
+                <option value="uncertain">Uncertain</option>
+            </select>
+
+            <label for="support">Do you have a support system (family/friends)?</label>
+            <select id="support" name="support">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <button type="submit">Get Advice</button>
+        </form>
+        <div id="adviceResult" class="hidden">
+            <h2>Your Advice:</h2>
+            <p id="adviceText"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
